@@ -247,7 +247,7 @@ export default function Page() {
   useEffect(() => {
     if (yesPressed && noCount < 4 && !popupShown) {
       Swal.fire({
-        title: "I love you sooo Much Bangaram!!❤️<br> You my everything that I should fight for!<br> I promise you that I will look after you like a small kid <br>I will cherish every moment with you, UMMAHHH🥰💖✨",
+        title: "I love you sooo Much Bangaram!!❤️<br> You are my everything that I should fight for!<br> I promise you that I will look after you like a baby <br>I will cherish every moment with you, UMMAHHH🥰💖✨",
         showClass: {
           popup: `
             animate__animated
