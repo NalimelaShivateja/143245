@@ -214,8 +214,8 @@ export default function Page() {
   const getNoButtonText = () => {
 
     const phrases = [
-      "No",
-      "Are you sure?",
+      "No? Anthena Bangaram?",
+      "Are you sure? Bubu think once!",
       "Really sure?",
       "Think again!",
       "Last chance!",
@@ -238,7 +238,7 @@ export default function Page() {
       "I believe in you, don't disappoint me! 💔",
       "My heart says yes, what about yours? ❤️",
       "Don't leave me hanging! 😬",
-      "Plsss? :( You're breaking my heart 💔",
+      "Plsss bangaramm? :( You're breaking my heart 💔",
     ];
     
     return phrases[Math.min(noCount, phrases.length - 1)];
@@ -247,7 +247,7 @@ export default function Page() {
   useEffect(() => {
     if (yesPressed && noCount < 4 && !popupShown) {
       Swal.fire({
-        title: "I love you sooo Much!!!❤️, You’ve stolen my heart completely!!! 🥰💖 But itni pyaari ladki aur itni jaldi haan? Thoda aur nakhre karke mujhe tarpaao na! 🥰✨",
+        title: "I love you sooo Much Bangaram!!❤️<br> You my everything that I should fight for!<br> I promise you that I will look after you like a small kid <br>I will cherish every moment with you, UMMAHHH🥰💖✨",
         showClass: {
           popup: `
             animate__animated
@@ -274,7 +274,7 @@ export default function Page() {
   useEffect(() => {
     if (yesPressed && noCount > 3 && !yespopupShown) {
       Swal.fire({
-        title: "I love you so much!! ❤️ You are my everything, my joy, my forever. Every moment with you is a memory I’ll cherish forever, and my heart beats only for you.</br> Will you be the love of my life forever?",
+        title: "I love you so much Papaa!! ❤️ You are my everything, my joy, my forever. Every moment with you is a memory I’ll cherish forever, and my heart beats only for you.</br> Will you be the love of my life forever?",
         width: 800,
         padding: "2em",
         color: "#716add",
@@ -345,7 +345,7 @@ export default function Page() {
               alt="Love Animation"
             />
             <h1 className="text-4xl md:text-6xl my-4 text-center">
-              Will you be my Valentine?
+              Will you be my Valentine bangaram?
             </h1>
             <div className="flex flex-wrap justify-center gap-2 items-center">
               <button
@@ -355,7 +355,7 @@ export default function Page() {
                 style={{ fontSize: yesButtonSize }}
                 onClick={handleYesClick}
               >
-                Yes
+                Yes Shivuu
               </button>
               <button
                 onMouseEnter={handleMouseEnterNo}
@@ -363,7 +363,7 @@ export default function Page() {
                 onClick={handleNoClick}
                 className="bg-rose-500 hover:bg-rose-600 rounded-lg text-white font-bold py-2 px-4"
               >
-                {noCount === 0 ? "No" : getNoButtonText()}
+                {noCount === 0 ? "Ellehe" : getNoButtonText()}
               </button>
             </div>
             {floatingGifs.map((gif) => (
@@ -391,18 +391,15 @@ export default function Page() {
 
 const Footer = () => {
   return (
-    <a
+    <p
       className="fixed bottom-2 right-2 backdrop-blur-md opacity-80 hover:opacity-95 border p-1 rounded border-rose-300"
-      href="https://github.com/UjjwalSaini07"
-      target="_blank"
-      rel="noopener noreferrer"
     >
       Made with{" "}
       <span role="img" aria-label="heart">
         ❤️
       </span>
-      {" "}by Ujjwal
-    </a>
+      {" "}by yours Shivuu
+    </p>
   );
 };
 
